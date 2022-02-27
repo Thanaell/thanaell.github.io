@@ -24,14 +24,16 @@
 </noscript><meta property="og:title" content="Clone Dash : a locomotion technique">
 <meta property="og:description" content="Lab Homework 4 & 5 ; Class Homework 4 & 5">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://thanaell.github.io/posts/igd301/clone-dash/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://thanaell.github.io/posts/igd301/clone-dash/">
+<meta property="og:image" content="https://thanaell.github.io/images/clone_dash.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-02-06T12:27:17+01:00">
 <meta property="article:modified_time" content="2022-02-06T12:27:17+01:00">
-<meta name=twitter:card content="summary">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://thanaell.github.io/images/clone_dash.png">
 <meta name=twitter:title content="Clone Dash : a locomotion technique">
 <meta name=twitter:description content="Lab Homework 4 & 5 ; Class Homework 4 & 5">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://thanaell.github.io/posts/"},{"@type":"ListItem","position":3,"name":"IGD301","item":"https://thanaell.github.io/posts/igd301/"},{"@type":"ListItem","position":4,"name":"Clone Dash : a locomotion technique","item":"https://thanaell.github.io/posts/igd301/clone-dash/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Clone Dash : a locomotion technique","name":"Clone Dash : a locomotion technique","description":"Lab Homework 4 \u0026amp; 5 ; Class Homework 4 \u0026amp; 5","keywords":[],"articleBody":"// TODO : intro (but, parcours)\nIdea and Objectives Implementation Clone Movement Animation Dash Straight Dash Adding a Curved Dash Vignette effect Adding Evaluation Main objectives Other metrics ","wordCount":"28","inLanguage":"en","datePublished":"2022-02-06T12:27:17+01:00","dateModified":"2022-02-06T12:27:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thanaell.github.io/posts/igd301/clone-dash/"},"publisher":{"@type":"Organization","name":"Gaëlle Clavelin","logo":{"@type":"ImageObject","url":"https://thanaell.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Clone Dash : a locomotion technique","name":"Clone Dash : a locomotion technique","description":"Lab Homework 4 \u0026amp; 5 ; Class Homework 4 \u0026amp; 5","keywords":[],"articleBody":"The purpose of this project was to design, implement and evaluate a new locomotion technique for virtual reality. This technique would be tested by several users in a previously created scene where the goal is to collect coins on a parkour as fast and accurately as possible.\nIdea and Objectives The main objective of my project was to create a locomotion technique usable by the maximum amount of people. That meant I had to consider people who cannot walk, who cannot perform large arms movement, or people who are very sensitive to simulator sickness.\nThis motivated several design decisions :\n Virtual locomotion (so that people don’t have to actually walk). Easy to pickup and to use. Minimal simulator sickness.  To try and fulfill these criterias, I decided to combine two ideas :\n The use of an external clone that can be controlled with a joystick. The possibility to dash towards the clone, on the press of a button.  Implementation Clone Movement Animation Dash Straight Dash Adding a Curved Dash Vignette effect Adding Evaluation Main objectives Other metrics ","wordCount":"177","inLanguage":"en","image":"https://thanaell.github.io/images/clone_dash.png","datePublished":"2022-02-06T12:27:17+01:00","dateModified":"2022-02-06T12:27:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thanaell.github.io/posts/igd301/clone-dash/"},"publisher":{"@type":"Organization","name":"Gaëlle Clavelin","logo":{"@type":"ImageObject","url":"https://thanaell.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -77,8 +79,24 @@ Clone Dash : a locomotion technique
 <div class=post-meta><span title="2022-02-06 12:27:17 +0100 +0100">February 6, 2022</span>
 </div>
 </header>
-<div class=post-content><p>// TODO : intro (but, parcours)</p>
+<figure class=entry-cover><img loading=lazy src=https://thanaell.github.io/images/clone_dash.png alt="Clone Dash Image">
+</figure>
+<div class=post-content><p>The purpose of this project was to design, implement and evaluate a new locomotion technique for virtual reality. This technique would be tested by several users in a previously created scene where the goal is to collect coins on a parkour as fast and accurately as possible.</p>
 <h1 id=idea-and-objectives>Idea and Objectives<a hidden class=anchor aria-hidden=true href=#idea-and-objectives>#</a></h1>
+<p>The main objective of my project was to create a locomotion technique usable by the maximum amount of people. That meant I had to consider people who cannot walk, who cannot perform large arms movement, or people who are very sensitive to simulator sickness.</p>
+<p>This motivated several design decisions :</p>
+<ul>
+<li>Virtual locomotion (so that people don&rsquo;t have to actually walk).</li>
+<li>Easy to pickup and to use.</li>
+<li>Minimal simulator sickness.</li>
+</ul>
+<p>To try and fulfill these criterias, I decided to combine two ideas :</p>
+<ul>
+<li>The use of an external clone that can be controlled with a joystick.</li>
+<li>The possibility to dash towards the clone, on the press of a button.</li>
+</ul>
+<p><img loading=lazy src=/images/Schemas/clonedash.png alt="Clone Dash sketch">
+</p>
 <h1 id=implementation>Implementation<a hidden class=anchor aria-hidden=true href=#implementation>#</a></h1>
 <h2 id=clone>Clone<a hidden class=anchor aria-hidden=true href=#clone>#</a></h2>
 <h3 id=movement>Movement<a hidden class=anchor aria-hidden=true href=#movement>#</a></h3>
