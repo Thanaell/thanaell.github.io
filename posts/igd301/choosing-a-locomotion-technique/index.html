@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Ultimate Display | Gaëlle Clavelin</title>
+<title>Sketching ideas for VR locomotion | Gaëlle Clavelin</title>
 <meta name=keywords content>
-<meta name=description content="Class Homework 2">
+<meta name=description content="Class Homework 3">
 <meta name=author content>
-<link rel=canonical href=https://thanaell.github.io/posts/igd301/ultimate-display/>
+<link rel=canonical href=https://thanaell.github.io/posts/igd301/choosing-a-locomotion-technique/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
 <script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://thanaell.github.io/favicon.ico>
@@ -21,19 +21,17 @@
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript><meta property="og:title" content="Ultimate Display">
-<meta property="og:description" content="Class Homework 2">
+</noscript><meta property="og:title" content="Sketching ideas for VR locomotion">
+<meta property="og:description" content="Class Homework 3">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://thanaell.github.io/posts/igd301/ultimate-display/">
-<meta property="og:image" content="https://thanaell.github.io/images/ultimate_display.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2022-02-03T12:27:17+01:00">
-<meta property="article:modified_time" content="2022-02-03T12:27:17+01:00">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://thanaell.github.io/images/ultimate_display.png">
-<meta name=twitter:title content="Ultimate Display">
-<meta name=twitter:description content="Class Homework 2">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://thanaell.github.io/posts/"},{"@type":"ListItem","position":3,"name":"IGD301","item":"https://thanaell.github.io/posts/igd301/"},{"@type":"ListItem","position":4,"name":"Ultimate Display","item":"https://thanaell.github.io/posts/igd301/ultimate-display/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Ultimate Display","name":"Ultimate Display","description":"Class Homework 2","keywords":[],"articleBody":"This is how Sutherlands describes the “Ultimate Display”, in his paper from 1965 : “a room within which the computer can control the existence of matter”.\nOften we think about Mixed Reality experiences by placing them on the Milgram continuum, going from reality to virtual reality.\nBut how would we place Sutherland’s Ultimate Display on this continuum ?\nThis idea actually goes out of the scope of the continuum. The computer is not adding virtual elements to the real world, but modifying reality itself. It is not stimulating human receptors to emulate sensations, but actually creating the sensations by creating real world elements.\nEither this Ultimate Display is not even Mixed Reality anymore (it’s just pure reality : one cannot put a chair in a room and decide it is virtual) or it covers the whole continuum at once.\n","wordCount":"139","inLanguage":"en","image":"https://thanaell.github.io/images/ultimate_display.png","datePublished":"2022-02-03T12:27:17+01:00","dateModified":"2022-02-03T12:27:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thanaell.github.io/posts/igd301/ultimate-display/"},"publisher":{"@type":"Organization","name":"Gaëlle Clavelin","logo":{"@type":"ImageObject","url":"https://thanaell.github.io/favicon.ico"}}}</script>
+<meta property="og:url" content="https://thanaell.github.io/posts/igd301/choosing-a-locomotion-technique/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-02-05T12:27:17+01:00">
+<meta property="article:modified_time" content="2022-02-05T12:27:17+01:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Sketching ideas for VR locomotion">
+<meta name=twitter:description content="Class Homework 3">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://thanaell.github.io/posts/"},{"@type":"ListItem","position":3,"name":"IGD301","item":"https://thanaell.github.io/posts/igd301/"},{"@type":"ListItem","position":4,"name":"Sketching ideas for VR locomotion","item":"https://thanaell.github.io/posts/igd301/choosing-a-locomotion-technique/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Sketching ideas for VR locomotion","name":"Sketching ideas for VR locomotion","description":"Class Homework 3","keywords":[],"articleBody":"For this assignment, I imagined three ways for a user to move in a VR scene. I chose three virtual locomotions (where the user doesn’t actually walk), with different systems, all aiming to reduce simulator sickness, which can be a very unpleasant side effect of VR locomotion.\nClone Dash In this idea, the user controls a clone of himself using the joystick. It can move around like a character in classical video games. Then, by pressing a button, the user triggers a “dash” (inspired by the “Blink”, in the game Dishonored), and rushes toward the clone. The fact that the rush is quite fast, as well as a blur effect on the sides of the screen, reduces simulator sickness. Slide the World Often, simulator sickness occurs in VR because of an inconsistency between the static body of the user, and their impression of moving in the virtual world. But what if the world was moving, and not the user ?\nIn this idea, the user uses a the controller as anchor points to move the world around him the way he wants to, by “pinching” the environment, moving it around (pulling, pushing and rotating) with his hands, and then releasing.\nMiniature World In this idea, the user manipulates with his hands a small puppet representing himself in the world. By turning his left hand up, the user makes a miniature version of his environment appear. By then placing the puppet at the desired spot on the miniature, they trigger a teleportation to the new spot. ","wordCount":"255","inLanguage":"en","datePublished":"2022-02-05T12:27:17+01:00","dateModified":"2022-02-05T12:27:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thanaell.github.io/posts/igd301/choosing-a-locomotion-technique/"},"publisher":{"@type":"Organization","name":"Gaëlle Clavelin","logo":{"@type":"ImageObject","url":"https://thanaell.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -74,32 +72,37 @@
 <article class=post-single>
 <header class=post-header>
 <h1 class=post-title>
-Ultimate Display
+Sketching ideas for VR locomotion
 </h1>
-<div class=post-meta><span title="2022-02-03 12:27:17 +0100 +0100">February 3, 2022</span>
+<div class=post-meta><span title="2022-02-05 12:27:17 +0100 +0100">February 5, 2022</span>
 </div>
 </header>
-<figure class=entry-cover><img loading=lazy src=https://thanaell.github.io/images/ultimate_display.png alt="Ultimate Display Image">
-</figure>
-<div class=post-content><p>This is how Sutherlands describes the &ldquo;Ultimate Display&rdquo;, in his paper from 1965 : &ldquo;a room within which the computer can control the existence of matter&rdquo;.</p>
-<p>Often we think about Mixed Reality experiences by placing them on the Milgram continuum, going from reality to virtual reality.</p>
-<p><img loading=lazy src=/images/continuum.png alt=continuum>
+<div class=post-content><p>For this assignment, I imagined three ways for a user to move in a VR scene. I chose three virtual locomotions (where the user doesn&rsquo;t actually walk), with different systems, all aiming to reduce simulator sickness, which can be a very unpleasant side effect of VR locomotion.</p>
+<h3 id=clone-dash>Clone Dash<a hidden class=anchor aria-hidden=true href=#clone-dash>#</a></h3>
+<p>In this idea, the user controls a clone of himself using the joystick. It can move around like a character in classical video games. Then, by pressing a button, the user triggers a &ldquo;dash&rdquo; (inspired by the &ldquo;Blink&rdquo;, in the game Dishonored), and rushes toward the clone. The fact that the rush is quite fast, as well as a blur effect on the sides of the screen, reduces simulator sickness.
+<img loading=lazy src=/images/Schemas/clonedash.png alt=cloneDash>
 </p>
-<p>But how would we place Sutherland&rsquo;s Ultimate Display on this continuum ?</p>
-<p>This idea actually goes out of the scope of the continuum. The computer is not adding virtual elements to the real world, but modifying reality itself. It is not stimulating human receptors to emulate sensations, but actually creating the sensations by creating real world elements.</p>
-<p>Either this Ultimate Display is not even Mixed Reality anymore (it&rsquo;s just pure reality : one cannot put a chair in a room and decide it is virtual) or it covers the whole continuum at once.</p>
+<h3 id=slide-the-world>Slide the World<a hidden class=anchor aria-hidden=true href=#slide-the-world>#</a></h3>
+<p>Often, simulator sickness occurs in VR because of an inconsistency between the static body of the user, and their impression of moving in the virtual world. But what if the world was moving, and not the user ?</p>
+<p>In this idea, the user uses a the controller as anchor points to move the world around him the way he wants to, by &ldquo;pinching&rdquo; the environment, moving it around (pulling, pushing and rotating) with his hands, and then releasing.</p>
+<p><img loading=lazy src=/images/Schemas/slidetheworld.png alt=slideTheWorld>
+</p>
+<h3 id=miniature-world>Miniature World<a hidden class=anchor aria-hidden=true href=#miniature-world>#</a></h3>
+<p>In this idea, the user manipulates with his hands a small puppet representing himself in the world. By turning his left hand up, the user makes a miniature version of his environment appear. By then placing the puppet at the desired spot on the miniature, they trigger a teleportation to the new spot.
+<img loading=lazy src=/images/Schemas/miniature.png alt="miniature world">
+</p>
 </div>
 <footer class=post-footer>
 <nav class=paginav>
-<a class=prev href=https://thanaell.github.io/posts/igd301/hyper-reality/>
+<a class=prev href=https://thanaell.github.io/posts/igd301/clone-dash/>
 <span class=title>« Prev Page</span>
 <br>
-<span>Hyper Reality, and ideas of harmful VR</span>
+<span>Clone Dash : a locomotion technique</span>
 </a>
-<a class=next href=https://thanaell.github.io/posts/igd301/unity-setup/>
+<a class=next href=https://thanaell.github.io/posts/igd301/hyper-reality/>
 <span class=title>Next Page »</span>
 <br>
-<span>Setting up Unity and VR : Magnet game</span>
+<span>Hyper Reality, and ideas of harmful VR</span>
 </a>
 </nav>
 </footer>
