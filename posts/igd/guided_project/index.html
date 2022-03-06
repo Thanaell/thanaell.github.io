@@ -3,9 +3,15 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Finger Breaker | Gaëlle Clavelin</title>
+<title>Finger dislocator: creating negative feelings in VR | Gaëlle Clavelin</title>
 <meta name=keywords content>
-<meta name=description content="Finger Breaker - Gaëlle Clavelin">
+<meta name=description content="Persuasive Design Pulling vs Pushing
+An idea of &ldquo;push&rdquo; Why finger ? Sensitive + easy to do + used by many haptic devices
+Prototype Visual only Overriding the Quest finger tracking
+Adding haptics Prototype Box + 3D print servo + Arduino
+Synchronization Uduino for time sync (photo setup) Use of controllers for spatial sync
+The danger of realism cf paper
+Perspectives Improving realism Solenoid Add simulation of impact at the moment of dislocation">
 <meta name=author content>
 <link rel=canonical href=https://thanaell.github.io/posts/igd/guided_project/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
@@ -21,17 +27,29 @@
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript><meta property="og:title" content="Finger Breaker">
-<meta property="og:description" content>
+</noscript><meta property="og:title" content="Finger dislocator: creating negative feelings in VR">
+<meta property="og:description" content="Persuasive Design Pulling vs Pushing
+An idea of &ldquo;push&rdquo; Why finger ? Sensitive + easy to do + used by many haptic devices
+Prototype Visual only Overriding the Quest finger tracking
+Adding haptics Prototype Box + 3D print servo + Arduino
+Synchronization Uduino for time sync (photo setup) Use of controllers for spatial sync
+The danger of realism cf paper
+Perspectives Improving realism Solenoid Add simulation of impact at the moment of dislocation">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://thanaell.github.io/posts/igd/guided_project/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-12-02T12:27:17+01:00">
 <meta property="article:modified_time" content="2021-12-02T12:27:17+01:00">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Finger Breaker">
-<meta name=twitter:description content>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://thanaell.github.io/posts/"},{"@type":"ListItem","position":3,"name":"IGD","item":"https://thanaell.github.io/posts/igd/"},{"@type":"ListItem","position":4,"name":"Finger Breaker","item":"https://thanaell.github.io/posts/igd/guided_project/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Finger Breaker","name":"Finger Breaker","description":"","keywords":[],"articleBody":"","wordCount":"0","inLanguage":"en","datePublished":"2021-12-02T12:27:17+01:00","dateModified":"2021-12-02T12:27:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thanaell.github.io/posts/igd/guided_project/"},"publisher":{"@type":"Organization","name":"Gaëlle Clavelin","logo":{"@type":"ImageObject","url":"https://thanaell.github.io/favicon.ico"}}}</script>
+<meta name=twitter:title content="Finger dislocator: creating negative feelings in VR">
+<meta name=twitter:description content="Persuasive Design Pulling vs Pushing
+An idea of &ldquo;push&rdquo; Why finger ? Sensitive + easy to do + used by many haptic devices
+Prototype Visual only Overriding the Quest finger tracking
+Adding haptics Prototype Box + 3D print servo + Arduino
+Synchronization Uduino for time sync (photo setup) Use of controllers for spatial sync
+The danger of realism cf paper
+Perspectives Improving realism Solenoid Add simulation of impact at the moment of dislocation">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://thanaell.github.io/posts/"},{"@type":"ListItem","position":3,"name":"IGD","item":"https://thanaell.github.io/posts/igd/"},{"@type":"ListItem","position":4,"name":"Finger dislocator: creating negative feelings in VR","item":"https://thanaell.github.io/posts/igd/guided_project/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Finger dislocator: creating negative feelings in VR","name":"Finger dislocator: creating negative feelings in VR","description":"Persuasive Design Pulling vs Pushing\nAn idea of \u0026ldquo;push\u0026rdquo; Why finger ? Sensitive + easy to do + used by many haptic devices\nPrototype Visual only Overriding the Quest finger tracking\nAdding haptics Prototype Box + 3D print servo + Arduino\nSynchronization Uduino for time sync (photo setup) Use of controllers for spatial sync\nThe danger of realism cf paper\nPerspectives Improving realism Solenoid Add simulation of impact at the moment of dislocation","keywords":[],"articleBody":"Persuasive Design Pulling vs Pushing\nAn idea of “push” Why finger ? Sensitive + easy to do + used by many haptic devices\nPrototype Visual only Overriding the Quest finger tracking\nAdding haptics Prototype Box + 3D print servo + Arduino\nSynchronization Uduino for time sync (photo setup) Use of controllers for spatial sync\nThe danger of realism cf paper\nPerspectives Improving realism Solenoid Add simulation of impact at the moment of dislocation\nVisualization : solve the angle limitation = Omnicept (+ gives biometric dats (use as transition)) Explain the current problem\nRunning a study Ethics Virtual pain is still pain !\nModalities Visual only, haptics only, combination\nExpected results (hypothesis) cf paper\n","wordCount":"113","inLanguage":"en","datePublished":"2021-12-02T12:27:17+01:00","dateModified":"2021-12-02T12:27:17+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://thanaell.github.io/posts/igd/guided_project/"},"publisher":{"@type":"Organization","name":"Gaëlle Clavelin","logo":{"@type":"ImageObject","url":"https://thanaell.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -72,11 +90,40 @@
 <article class=post-single>
 <header class=post-header>
 <h1 class=post-title>
-Finger Breaker
+Finger dislocator: creating negative feelings in VR
 </h1>
 <div class=post-meta><span title="2021-12-02 12:27:17 +0100 +0100">December 2, 2021</span>
 </div>
 </header>
+<div class=post-content><h1 id=persuasive-design>Persuasive Design<a hidden class=anchor aria-hidden=true href=#persuasive-design>#</a></h1>
+<p>Pulling vs Pushing</p>
+<h1 id=an-idea-of-push>An idea of &ldquo;push&rdquo;<a hidden class=anchor aria-hidden=true href=#an-idea-of-push>#</a></h1>
+<p>Why finger ? Sensitive + easy to do + used by many haptic devices</p>
+<h1 id=prototype>Prototype<a hidden class=anchor aria-hidden=true href=#prototype>#</a></h1>
+<h2 id=visual-only>Visual only<a hidden class=anchor aria-hidden=true href=#visual-only>#</a></h2>
+<p>Overriding the Quest finger tracking</p>
+<h2 id=adding-haptics>Adding haptics<a hidden class=anchor aria-hidden=true href=#adding-haptics>#</a></h2>
+<h3 id=prototype-1>Prototype<a hidden class=anchor aria-hidden=true href=#prototype-1>#</a></h3>
+<p>Box + 3D print servo + Arduino</p>
+<h3 id=synchronization>Synchronization<a hidden class=anchor aria-hidden=true href=#synchronization>#</a></h3>
+<p>Uduino for time sync (photo setup)
+Use of controllers for spatial sync</p>
+<h1 id=the-danger-of-realism>The danger of realism<a hidden class=anchor aria-hidden=true href=#the-danger-of-realism>#</a></h1>
+<p>cf paper</p>
+<h1 id=perspectives>Perspectives<a hidden class=anchor aria-hidden=true href=#perspectives>#</a></h1>
+<h2 id=improving-realism>Improving realism<a hidden class=anchor aria-hidden=true href=#improving-realism>#</a></h2>
+<h3 id=solenoid>Solenoid<a hidden class=anchor aria-hidden=true href=#solenoid>#</a></h3>
+<p>Add simulation of impact at the moment of dislocation</p>
+<h3 id=visualization--solve-the-angle-limitation--omnicept--gives-biometric-dats-use-as-transition>Visualization : solve the angle limitation => Omnicept (+ gives biometric dats (use as transition))<a hidden class=anchor aria-hidden=true href=#visualization--solve-the-angle-limitation--omnicept--gives-biometric-dats-use-as-transition>#</a></h3>
+<p>Explain the current problem</p>
+<h2 id=running-a-study>Running a study<a hidden class=anchor aria-hidden=true href=#running-a-study>#</a></h2>
+<h3 id=ethics>Ethics<a hidden class=anchor aria-hidden=true href=#ethics>#</a></h3>
+<p>Virtual pain is still pain !</p>
+<h3 id=modalities>Modalities<a hidden class=anchor aria-hidden=true href=#modalities>#</a></h3>
+<p>Visual only, haptics only, combination</p>
+<h3 id=expected-results-hypothesis>Expected results (hypothesis)<a hidden class=anchor aria-hidden=true href=#expected-results-hypothesis>#</a></h3>
+<p>cf paper</p>
+</div>
 <footer class=post-footer>
 <nav class=paginav>
 <a class=prev href=https://thanaell.github.io/posts/jin/cp_arrow/>
